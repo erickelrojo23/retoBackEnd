@@ -18,3 +18,5 @@ ADD ${JAR_FILE} backend.jar
 
 # Run the jar file
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/backend.jar"]
+
+#docker inspect --format '{{ .NetworkSettings.IPAddress }}' retobackend
